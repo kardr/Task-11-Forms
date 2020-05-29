@@ -19,6 +19,7 @@ namespace Task_11_Forms
         }
         class Regular
         {
+
             public Regular(string pattern, string txt)
             {
                 r = new Regex(pattern);
@@ -27,17 +28,14 @@ namespace Task_11_Forms
             private Regex r;
             private string text;
 
-            public string Match_patter()
+            public bool Match_patter()
             {
-                string s = "";
                 MatchCollection m = r.Matches(text);
                 foreach (Match x in m)
                 {
-                    s = "Содержит";
-                    return s;
+                    return true;
                 }
-                s = "Не содержит";
-                return s;
+                return false;
             }
 
             public string Output_on_display()
@@ -45,8 +43,8 @@ namespace Task_11_Forms
                 string s = "";
                 MatchCollection m = r.Matches(text);
                 foreach (Match x in m)
-                    s = x.Value;
-                return s;
+                    s += "\n\r" + x.Value+ "\n\r";
+                return s ;
             }
 
             public string Delete()
@@ -59,8 +57,7 @@ namespace Task_11_Forms
                     int l = x.Value.Length;
                     s = s.Remove(i, l);
                 }
-                Console.WriteLine(s);
-                return s;
+                return  s;
             }
 
             public Regex R
@@ -73,24 +70,27 @@ namespace Task_11_Forms
                 get { return text; }
                 set { text = value; }
             }
+
         }
+
         private void Botton_Click(object sender, EventArgs e)
         {
-            string s = "";
-            string text = "Мальчик проснулся в 09:00.";
-            s += "ТЕКСТ:  " + text + "\n\r";
+            string text = "Мальчик проснулся в 11:50, а должен был проснуться в 09:00.";
+            textBox1.Text += text;
             string pattern = ("[0-2][0-9]:[0-6][0-9]");
-            s += "ШАБЛОН:  " + pattern + "\n\r";
-            information.Text = s.ToString();
+            textBox2.Text += pattern;
             Regular myReg = new Regular(pattern, text);
-            Console.WriteLine("СОДЕРЖИТ ЛИ ТЕКСТ ФРАГМЕНТЫ, СООТВЕТСТВУЮЩИЕ ШАБЛОНУ ПОЛЯ:");
-            t_or_f.Text = myReg.Match_patter().ToString();
-            Console.WriteLine("ФРАГМЕНТЫ ТЕКСТА, СООТВЕТСТВУЮЩИЕ ШАБЛОНУ ПОЛЯ:");
-            print.Text = myReg.Output_on_display().ToString();
-            Console.WriteLine();
-            Console.WriteLine("УДАЛЕНИЕ ИЗ ТЕКСТА ФРАГМЕНТОВ, СООТВЕТСТВУЮЩИХ ШАБЛОНУ ПОЛЯ:");
-            remore.Text = myReg.Delete().ToString();
-            print.Text = myReg.Output_on_display().ToString();
+            if (myReg.Match_patter())
+            {
+                textBox3.Text += "Содержит";
+            }
+            else
+            {
+                textBox3.Text +=  "Не содержит";
+            }
+            textBox4.Text += myReg.Output_on_display();
+            textBox5.Text += myReg.Text = myReg.Delete();
+            textBox5.Text += myReg.Output_on_display();
         }
     }
 }

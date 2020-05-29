@@ -28,141 +28,152 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Task = new System.Windows.Forms.GroupBox();
-            this.print = new System.Windows.Forms.Label();
-            this.information = new System.Windows.Forms.Label();
-            this.remore = new System.Windows.Forms.Label();
-            this.v3 = new System.Windows.Forms.Label();
-            this.v2 = new System.Windows.Forms.Label();
-            this.t_or_f = new System.Windows.Forms.Label();
-            this.v1 = new System.Windows.Forms.Label();
             this.Botton = new System.Windows.Forms.Button();
-            this.Task.SuspendLayout();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // Task
-            // 
-            this.Task.BackColor = System.Drawing.Color.White;
-            this.Task.Controls.Add(this.print);
-            this.Task.Controls.Add(this.information);
-            this.Task.Controls.Add(this.remore);
-            this.Task.Controls.Add(this.v3);
-            this.Task.Controls.Add(this.v2);
-            this.Task.Controls.Add(this.t_or_f);
-            this.Task.Controls.Add(this.v1);
-            this.Task.Location = new System.Drawing.Point(79, 67);
-            this.Task.Margin = new System.Windows.Forms.Padding(2);
-            this.Task.Name = "Task";
-            this.Task.Padding = new System.Windows.Forms.Padding(2);
-            this.Task.Size = new System.Drawing.Size(445, 347);
-            this.Task.TabIndex = 9;
-            this.Task.TabStop = false;
-            // 
-            // print
-            // 
-            this.print.AutoSize = true;
-            this.print.Location = new System.Drawing.Point(4, 191);
-            this.print.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.print.Name = "print";
-            this.print.Size = new System.Drawing.Size(0, 13);
-            this.print.TabIndex = 10;
-            // 
-            // information
-            // 
-            this.information.AutoSize = true;
-            this.information.Location = new System.Drawing.Point(4, 28);
-            this.information.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.information.Name = "information";
-            this.information.Size = new System.Drawing.Size(0, 13);
-            this.information.TabIndex = 9;
-            // 
-            // remore
-            // 
-            this.remore.AutoSize = true;
-            this.remore.Location = new System.Drawing.Point(4, 276);
-            this.remore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.remore.Name = "remore";
-            this.remore.Size = new System.Drawing.Size(0, 13);
-            this.remore.TabIndex = 7;
-            // 
-            // v3
-            // 
-            this.v3.AutoSize = true;
-            this.v3.Location = new System.Drawing.Point(13, 258);
-            this.v3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.v3.Name = "v3";
-            this.v3.Size = new System.Drawing.Size(428, 13);
-            this.v3.TabIndex = 6;
-            this.v3.Text = "УДАЛЕНИЕ ИЗ ТЕКСТА ФРАГМЕНТОВ, СООТВЕТСТВУЮЩИХ ШАБЛОНУ ПОЛЯ:";
-            // 
-            // v2
-            // 
-            this.v2.AutoSize = true;
-            this.v2.Location = new System.Drawing.Point(40, 178);
-            this.v2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.v2.Name = "v2";
-            this.v2.Size = new System.Drawing.Size(340, 13);
-            this.v2.TabIndex = 4;
-            this.v2.Text = "ФРАГМЕНТЫ ТЕКСТА, СООТВЕТСТВУЮЩИЕ ШАБЛОНУ ПОЛЯ:";
-            // 
-            // t_or_f
-            // 
-            this.t_or_f.AutoSize = true;
-            this.t_or_f.Location = new System.Drawing.Point(4, 146);
-            this.t_or_f.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.t_or_f.Name = "t_or_f";
-            this.t_or_f.Size = new System.Drawing.Size(0, 13);
-            this.t_or_f.TabIndex = 3;
-            // 
-            // v1
-            // 
-            this.v1.AutoSize = true;
-            this.v1.Location = new System.Drawing.Point(13, 116);
-            this.v1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.v1.Name = "v1";
-            this.v1.Size = new System.Drawing.Size(419, 13);
-            this.v1.TabIndex = 2;
-            this.v1.Text = "СОДЕРЖИТ ЛИ ТЕКСТ ФРАГМЕНТЫ, СООТВЕТСТВУЮЩИЕ ШАБЛОНУ ПОЛЯ:";
             // 
             // Botton
             // 
             this.Botton.BackColor = System.Drawing.Color.White;
-            this.Botton.Location = new System.Drawing.Point(227, 19);
+            this.Botton.Location = new System.Drawing.Point(164, 389);
             this.Botton.Margin = new System.Windows.Forms.Padding(2);
             this.Botton.Name = "Botton";
-            this.Botton.Size = new System.Drawing.Size(155, 44);
+            this.Botton.Size = new System.Drawing.Size(155, 60);
             this.Botton.TabIndex = 10;
             this.Botton.Text = "Вывести";
             this.Botton.UseVisualStyleBackColor = false;
             this.Botton.Click += new System.EventHandler(this.Botton_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(50, 52);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(186, 40);
+            this.textBox1.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(127, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "ТЕКСТ:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(322, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "ШАБЛОН: ";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(251, 52);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(179, 40);
+            this.textBox2.TabIndex = 14;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(142, 135);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(200, 40);
+            this.textBox3.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(37, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(419, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "СОДЕРЖИТ ЛИ ТЕКСТ ФРАГМЕНТЫ, СООТВЕТСТВУЮЩИЕ ШАБЛОНУ ПОЛЯ:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(65, 213);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(340, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "ФРАГМЕНТЫ ТЕКСТА, СООТВЕТСТВУЮЩИЕ ШАБЛОНУ ПОЛЯ:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(142, 229);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(200, 40);
+            this.textBox4.TabIndex = 18;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(142, 321);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(200, 40);
+            this.textBox5.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(37, 305);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(428, 13);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "УДАЛЕНИЕ ИЗ ТЕКСТА ФРАГМЕНТОВ, СООТВЕТСТВУЮЩИХ ШАБЛОНУ ПОЛЯ:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(628, 450);
-            this.Controls.Add(this.Task);
+            this.ClientSize = new System.Drawing.Size(500, 472);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Botton);
             this.Name = "Form1";
             this.Text = "Задание 11";
-            this.Task.ResumeLayout(false);
-            this.Task.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox Task;
-        private System.Windows.Forms.Label print;
-        private System.Windows.Forms.Label information;
-        private System.Windows.Forms.Label remore;
-        private System.Windows.Forms.Label v3;
-        private System.Windows.Forms.Label v2;
-        private System.Windows.Forms.Label t_or_f;
-        private System.Windows.Forms.Label v1;
         private System.Windows.Forms.Button Botton;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label5;
     }
 }
 
